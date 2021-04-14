@@ -4,12 +4,23 @@ import './App.css';
 import WAVES from 'vanta/dist/vanta.waves.min';
 import { useEffect, useRef, useState } from 'react';
 import Home from './components/Home';
+import Projects from './components/Projects';
 //import Skills from './components/Skills';
 
 const App = (props) => {
+  function showPage(){
+    const projects = document.getElementById('projects');
+    projects.style.display='block';
+    const pad =document.getElementById('pad');
+    pad.style.height='5vh';
+  }
   return (
     <div>
-      <Home />
+        <Home showPage={showPage} />
+        <div id='pad' style={{ height: '15vh', backgroundColor:'#ecf0f1', width:'100%'}}></div>
+        <div id='projects' style={{ display:'none'}}>
+          <Projects />
+        </div>
     </div>
   )
 }

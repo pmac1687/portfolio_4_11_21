@@ -10,12 +10,17 @@ const App = (props) => {
   const [vantaEffect, setVantaEffect] = useState(0)
   const myRef = useRef(null)
   const onScroll = (e) => {
-    console.log(1);
-    console.log(e)
+    const banner = document.getElementById('banner');
+    banner.style.display = 'none';
+    props.showPage();
+    const nav = document.getElementById('nav');
+    nav.style.display ='block';
   }
+
   useEffect(() => {
     window.addEventListener('scroll', onScroll);
   },[]);
+
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(WAVES({
@@ -32,17 +37,17 @@ const App = (props) => {
     }
   }, [vantaEffect]);
 
-  function collapseBanner(e) {
-    //e.preventDefault()
-    e.target.style.display = 'none';
-    console.log(1)
-  }
   return (
-    <div onScroll={e => collapseBanner(e)}>
-      <div style={{ height: '100vh',width: '100vw', position: "absolute", zIndex:'0'}} ref={myRef}>
+    <div>
+      <div id='banner'>
+        <div style={{ height: '100vh',width: '100vw', position: "absolute", zIndex:'0'}} ref={myRef}>
+        </div>
+        <Header pos={'relative'}  color={'#fffcff'}  />
+        <Title />
       </div>
-      <Header />
-      <Title />
+      <div id='nav' style={{ display:'none'}}>
+        <Header bg={'#0c120c'} pos={'absolute'} color={'#fffcff'}/>
+      </div>
     </div>
   )
 }
