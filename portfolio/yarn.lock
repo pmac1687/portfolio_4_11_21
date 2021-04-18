@@ -8942,6 +8942,13 @@ react-app-polyfill@^2.0.0:
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
 
+react-compass@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-compass/-/react-compass-0.1.0.tgz#81ab3eef940bb460ca0ac577fbedbb2e732ed30e"
+  integrity sha1-gas+75QLtGDKCsV3++27LnMu0w4=
+  dependencies:
+    react-style-normalizer "1.2.8"
+
 react-dev-utils@^11.0.3:
   version "11.0.4"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-11.0.4.tgz#a7ccb60257a1ca2e0efe7a83e38e6700d17aa37a"
@@ -9089,6 +9096,11 @@ react-strap@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/react-strap/-/react-strap-0.0.1.tgz#08f22c5e2a0ae7f475cd5814b89fc0c05a67215e"
   integrity sha1-CPIsXioK5/R1zVgUuJ/AwFpnIV4=
+
+react-style-normalizer@1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/react-style-normalizer/-/react-style-normalizer-1.2.8.tgz#7e84b3d25cea6225545c5af68963b225885344a2"
+  integrity sha1-foSz0lzqYiVUXFr2iWOyJYhTRKI=
 
 react-transition-group@^2.3.1:
   version "2.9.0"
