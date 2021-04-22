@@ -9,6 +9,7 @@ import Title from './Title'
 const App = (props) => {
   const [vantaEffect, setVantaEffect] = useState(0)
   const myRef = useRef(null)
+  
   const onScroll = (e) => {
     const banner = document.getElementById('banner');
     banner.style.display = 'none';
@@ -46,7 +47,7 @@ const App = (props) => {
         <Title />
       </div>
       <div id='nav' style={{ display:'none'}}>
-        <Header bg={'#0c120c'} pos={'absolute'} color={'#fffcff'}/>
+        <Header bg={'#0c120c'} pos={'fixed'} color={'#fffcff'}/>
       </div>
     </div>
   )

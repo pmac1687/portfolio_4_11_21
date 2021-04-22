@@ -5,6 +5,7 @@ import WAVES from 'vanta/dist/vanta.waves.min';
 import { useEffect, useRef, useState } from 'react';
 import Home from './components/Home';
 import Projects from './components/Projects';
+import About from './components/About';
 //import Skills from './components/Skills';
 
 const App = (props) => {
@@ -18,7 +19,10 @@ const App = (props) => {
     <div>
         <Home showPage={showPage} />
         <div id='pad' style={{ height: '15vh', backgroundColor:'#ecf0f1', width:'100%'}}></div>
-        <div id='projects' style={{ display:'none'}}>
+        <div id='about' style={{ }}>
+          <About />
+        </div>
+        <div id='projects' style={{ display: 'block'}}>
           <Projects />
         </div>
     </div>

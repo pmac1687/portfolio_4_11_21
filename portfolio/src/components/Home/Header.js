@@ -2,7 +2,7 @@
 
 export default function Header(props){
     return (
-        <div style={{ position: `${props.pos}`, zIndex: '1', display: 'flex', backgroundColor: `${props.bg}`, width: '100%'}}>
+        <div style={{ position: `${props.pos}`, zIndex: '3', display: 'flex', backgroundColor: `${props.bg}`, width: '100%'}}>
             <img style={{  }} src='http://patty-images.s3-website-us-west-1.amazonaws.com/M-logo-sm.png' alt='m-logo'/>
             <div>
                 <h2 style={{ color: '#fcc43d', paddingTop: '2vh'}}>Patrick McDermott</h2>

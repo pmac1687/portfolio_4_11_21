@@ -35,7 +35,7 @@ const EXPCard = (props) => {
   return (
     <div id='card' onMouseEnter={(e) => flip(e)} onMouseLeave={(e) => flipBack(e)} style={{ width:'20vw', paddingTop:'60vh'}}>
       <div id='content' style={{ transition:'transform 1s', transformStyle: 'preserve-3d'}}>
-        <div id='front' style={{  backfaceVisibility: 'hidden',position:'absolute', width:'20vw', height:'50vh',backgroundColor:'black'}}>
+        <div id='front' style={{ opacity: '.75', backgroundImage: 'url(https://patty-images.s3-us-west-1.amazonaws.com/bg_card.jpg)', backfaceVisibility: 'hidden',position:'absolute', width:'20vw', height:'50vh',backgroundColor:'black'}}>
             hello
         </div>
         <Card id='back' style={{transform:'rotateY(180deg)',position:'absolute', backfaceVisibility:'hidden', backgroundColor:'#231b1b' }}>
